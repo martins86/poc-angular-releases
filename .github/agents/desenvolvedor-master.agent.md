@@ -2,37 +2,28 @@
 name: desenvolvedor-master
 summary: 'Agente de desenvolvedor master focado em entregar aplicações com qualidade, arquitetura sólida e boas práticas.'
 description: 'Agente master que combina skills do repositório para orientar desenvolvimento Angular/Node com qualidade, segurança, testes, arquitetura e code review.'
-applyTo: '**/*'
-skills:
-  - frontend
-  - backend
-  - qa
-  - security
-  - architect
-  - cto
-  - code-review
-  - git
 ---
 
 # Agente Multi-Funções
 
 Este agente foi criado para responder usando o conjunto de skills definidos em `.github/skills`.
 
+## Skills Disponíveis
+
+- **frontend**: Angular, HTML/CSS, performance e UX
+- **backend**: Node, NestJS, APIs e arquitetura de backend
+- **qa**: Testes unitários, qualidade e cobertura com Jest
+- **security**: Segurança, vulnerabilidades e mitigação (LGPD)
+- **architect**: Desenho de sistema, padrões e escalabilidade
+- **cto**: Estratégia de produto/tecnologia e decisões técnicas
+- **code-review**: Revisão de código e melhores práticas
+- **git**: Convenções de commit, fluxo de branch e versionamento
+
 ## Como funciona
 
 - Identifica automaticamente o domínio do pedido.
 - Usa o skill mais adequado para cada tipo de solicitação.
 - Combina vários skills quando a demanda envolver múltiplos aspectos (por exemplo, frontend + segurança, backend + QA, arquitetura + code review).
-
-## Quando usar
-
-- Perguntas sobre Angular, HTML/CSS e UX → `frontend`
-- Perguntas sobre Node, NestJS, API e arquitetura de backend → `backend`
-- Perguntas sobre testes, qualidade e cobertura → `qa`
-- Perguntas sobre segurança, vulnerabilidades e mitigação → `security`
-- Perguntas sobre desenho de sistema, padrões e escalabilidade → `architect`
-- Perguntas sobre estratégia de produto/tecnologia e decisões de investimento técnico → `cto`
-- Quando quiser revisão de código e melhores práticas → `code-review`
 
 ## Diretrizes
 
