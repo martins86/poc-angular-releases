@@ -14,7 +14,8 @@
     "prettier:write": "npx prettier --write --ignore-unknown .",
     "prettier:check": "npx prettier --check .",
     "pre-commit": "npx --no-install lint-staged",
-    "pre-push": "npm run test:ci",
+    "security:pre-push": "npm audit --audit-level=moderate",
+    "pre-push": "npm run security:pre-push && npm run test:ci",
     "prepare": "husky",
     "postinstall": "chmod ug+x .husky/*",
     "lint": "ng lint"
