@@ -19,4 +19,16 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initialize the form with required controls', () => {
+    expect(component.loginForm.contains('email')).toBeTrue();
+    expect(component.loginForm.contains('password')).toBeTrue();
+    expect(component.loginForm.invalid).toBeTrue();
+  });
+
+  it('should mark the email control as invalid when empty', () => {
+    const emailControl = component.loginForm.get('email');
+
+    expect(emailControl?.hasError('required')).toBeTrue();
+  });
 });

@@ -16,19 +16,14 @@ import { ILoginForm } from '@core/interfaces/login-form.interface';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  loginForm!: FormGroup<ILoginForm>;
-
-  constructor() {
-    this.loadForm();
-  }
-
-  loadForm(): void {
-    this.loginForm = new FormGroup({
-      email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [
-        Validators.required,
-        Validators.minLength(6),
-      ]),
-    });
-  }
+  readonly loginForm = new FormGroup<ILoginForm>({
+    email: new FormControl('', {
+      nonNullable: true,
+      validators: [Validators.required, Validators.email],
+    }),
+    password: new FormControl('', {
+      nonNullable: true,
+      validators: [Validators.required, Validators.minLength(6)],
+    }),
+  });
 }
