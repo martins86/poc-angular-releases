@@ -1,7 +1,7 @@
 {
-  "*.{js,ts,md,html,scss,json}": [
+  "*.{ts,html,scss,md,json,js}": [
     "npm run prettier:write",
-    "git add",
     "npm run prettier:check"
-  ]
+  ],
+  "*.{ts,js}": ["npx eslint --fix", "npx eslint --max-warnings=0"]
 }
