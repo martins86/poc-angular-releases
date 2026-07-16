@@ -20,6 +20,7 @@
     "target": "ES2022",
     "module": "preserve",
     "useDefineForClassFields": false,
+    "ignoreDeprecations": "6.0",
     "lib": ["ES2022", "dom"],
     "paths": {
       "@pages/*": ["./src/app/pages/*"],
