@@ -73,19 +73,7 @@
           }
         },
         "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": [],
-            "stylePreprocessorOptions": {
-              "includePaths": ["./src/assets/styles"]
-            }
-          }
+          "builder": "@analogjs/vitest-angular:test"
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
